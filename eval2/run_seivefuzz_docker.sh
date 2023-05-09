@@ -1,7 +1,5 @@
 #!/bin/bash
 
-docker kill $(docker ps -aq)
-docker rm $(docker ps -aq)
 docker pull prashast94/sievefuzz:artifact
 docker run -d --name="sievefuzz_artifact" -it -v $PWD/results_raw:/root/areafuzz/results --network='host' --cap-add=SYS_PTRACE prashast94/sievefuzz:artifact /bin/bash
 
