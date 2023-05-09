@@ -56,7 +56,7 @@
 
 ```
     cd $HOME/Desktop/fuzz-prune/eval2/fuzz-results
-    cp -r results_raw results && chmod -R 777 results
+    sudo cp -r results_raw results && sudo chmod -R 777 results
     ./run-fuzz.sh
 ```
 
