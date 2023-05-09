@@ -2,14 +2,8 @@
 
 docker kill $(docker ps -aq)
 docker rm $(docker ps -aq)
-# docker pull prashast94/sievefuzz:artifact
+docker pull prashast94/sievefuzz:artifact
 docker run -d --name="sievefuzz_artifact" -it -v $PWD/results_raw:/root/areafuzz/results --network='host' --cap-add=SYS_PTRACE prashast94/sievefuzz:artifact /bin/bash
-
-
-##note: actual eval scripts are not in git repo - so copy sievefuzz actual eval files from docker container to host to modify
-# docker cp sievefuzz_artifact:/root/areafuzz/eval $PWD
-##note: eval files in eval/data/real-world
-
 
 #copy my modified scripts from host to container
 docker cp $PWD/../sievefuzz-modified/eval/. sievefuzz_artifact:/root/areafuzz/eval
