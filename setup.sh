@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# install dependencies
+cd $HOME
+sudo apt-get install -y cmake
+sudo apt-get install -y gawk
+sudo apt-get install -y libtool-bin
+sudo apt-get install -y autoconf
+sudo apt-get install -y bison
+sudo apt-get install -y flex
+sudo apt-get install -y libbz2-dev
+sudo apt-get install -y liblzo2-dev
+sudo apt-get install -y liblz4-dev
+sudo apt-get install -y texinfo
+sudo apt-get install -y xmlto
+sudo apt-get install -y m4
+sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libhdf5-dev
+sudo apt-get install -y libgmp-dev libmpfr-dev
+
 # install aflgo
 cd $HOME
 mkdir aflgo-top
@@ -38,19 +55,3 @@ export LLVM_CC_NAME="afl-clang-fast"
 export LLVM_CXX_NAME="afl-clang-fast++"
 go get github.com/SRI-CSL/gllvm/cmd/...
 ln -s $HOME/aflgo-top/build/llvm_tools/build-llvm/llvm/bin/* $AFLGO
-
-# install dependencies
-cd $HOME
-sudo apt-get install -y gawk
-sudo apt-get install -y libtool-bin
-sudo apt-get install -y autoconf
-sudo apt-get install -y bison
-sudo apt-get install -y flex
-sudo apt-get install -y libbz2-dev
-sudo apt-get install -y liblzo2-dev
-sudo apt-get install -y liblz4-dev
-sudo apt-get install -y texinfo
-sudo apt-get install -y xmlto
-sudo apt-get install -y m4
-sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libhdf5-dev
-sudo apt-get install -y libgmp-dev libmpfr-dev
