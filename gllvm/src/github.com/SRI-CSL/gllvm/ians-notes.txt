@@ -1,0 +1,18 @@
+To edit the code locally use the repository here:
+
+~/go/src/github.com/SRI-CSL/gllvm
+
+Then do:
+
+go install github.com/SRI-CSL/gllvm/cmd/...
+
+
+For keeping up with the Jones:
+
+clang -cc1 --help
+
+https://clang.llvm.org/docs/ClangCommandLineReference.html
+
+For fretting about race conditions:
+
+go build -race cmd
