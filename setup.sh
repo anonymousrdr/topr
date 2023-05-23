@@ -2,6 +2,7 @@
 
 # install dependencies
 cd $HOME
+sudo apt-get update
 sudo apt-get install -y cmake
 sudo apt-get install -y gawk
 sudo apt-get install -y libtool-bin
