@@ -36,4 +36,4 @@
 
 - Note: 24 core system is required for the complete runs of fuzzers
 - System requirements: Ubuntu 20.04, 66GB Memory, Intel® Xeon(R) CPU E5-2620 @ 2.00GHz × 24
-- To run the fuzzers, run the above set of commands listed in [Sanity Check](https://github.com/anonymousrdr/topr#santity-check)
+- To run the fuzzers, run the above set of commands listed in [Sanity Check](https://github.com/anonymousrdr/topr/docs#santity-check)
