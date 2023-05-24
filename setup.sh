@@ -48,7 +48,8 @@ rm *tar.gz
 sudo mv go /usr/local
 export PATH="/usr/local/go/bin:$PATH"
 cd $HOME
-cp -r $HOME/Desktop/fuzz-prune/gllvm $HOME
+cp $HOME/Desktop/fuzz-prune/gllvm.zip $HOME
+unzip -q $HOME/gllvm.zip -d $HOME
 export GOPATH=$HOME/gllvm
 export PATH=$PATH:$GOPATH/bin
 export LLVM_COMPILER_PATH=$AFLGO
