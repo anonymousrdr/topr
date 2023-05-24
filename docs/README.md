@@ -29,6 +29,7 @@
 ```
     cd $HOME/Desktop/fuzz-prune/eval2/fuzz-results
     sudo cp -r results_raw results && sudo chmod -R 777 results
+    cd $HOME/Desktop/fuzz-prune 
     ./run-fuzz.sh
 ```
 
