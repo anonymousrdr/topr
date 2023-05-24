@@ -9,7 +9,6 @@
 ```
     cd $HOME/Desktop
     git clone https://github.com/anonymousrdr/topr.git fuzz-prune
-    find $HOME/Desktop/fuzz-prune -type f -iname "*.sh" -exec chmod +x {} \;
     cd fuzz-prune
     ./setup.sh
     ./artifact-eval.sh
