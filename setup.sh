@@ -20,6 +20,7 @@ sudo apt-get install -y libgmp-dev libmpfr-dev
 
 # install aflgo
 cd $HOME
+sudo rm -rf aflgo-top
 mkdir aflgo-top
 cd aflgo-top
 git clone https://github.com/aflgo/aflgo.git
@@ -48,6 +49,7 @@ rm *tar.gz
 sudo mv go /usr/local
 export PATH="/usr/local/go/bin:$PATH"
 cd $HOME
+sudo rm -rf gllvm
 cp $HOME/Desktop/fuzz-prune/gllvm.zip $HOME
 unzip -q $HOME/gllvm.zip -d $HOME
 export GOPATH=$HOME/gllvm
