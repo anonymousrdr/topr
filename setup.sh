@@ -9,6 +9,7 @@ sudo apt-get install -y libtool-bin
 sudo apt-get install -y autoconf
 sudo apt-get install -y bison
 sudo apt-get install -y flex
+sudo apt-get install -y libpng-dev
 sudo apt-get install -y libbz2-dev
 sudo apt-get install -y liblzo2-dev
 sudo apt-get install -y liblz4-dev
