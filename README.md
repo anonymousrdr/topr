@@ -17,11 +17,11 @@
 - Results for TOPr vs. AFLGo evaluation are generated and stored in files named `all-stats.txt` listed below:
 
 ```
-    ls $(find $HOME/Desktop/fuzz-prune/experiments -type f -name "all-stats.txt")
+    find $HOME/Desktop/fuzz-prune/experiments -type f -name "all-stats.txt"
 ```
 
 - Results  for TOPr vs. SieveFuzz evaluation are generated and stored in files named `sum-stats.txt` listed below:
 
 ```
-    ls $(find $HOME/Desktop/fuzz-prune/eval2 -type f -name "sum-stats.txt")
+    find $HOME/Desktop/fuzz-prune/eval2 -type f -name "sum-stats.txt"
 ```
