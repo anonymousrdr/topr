@@ -5,7 +5,7 @@
 
 - System requirements: Ubuntu 20.04, 66GB Memory
 - To verify results in the paper, run the commands below
-- NOTE: The segmentation faults and other errors displayed on the terminal during the below runs are NOT errors in scripts but are bugs detected by the fuzzers and reported in the paper
+- NOTE: The segmentation faults and other errors displayed on the terminal during the below runs are NOT errors in scripts of TOPr framework but are bugs detected by the fuzzers and reported in the paper
 
 ```
     cd $HOME/Desktop
