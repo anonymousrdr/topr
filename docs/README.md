@@ -6,7 +6,7 @@
 ### Santity Check
 
 - Note: 4 core system is sufficient for a quick santity check to verify that the fuzzers run correctly
-- System requirements: Ubuntu 20.04, 66GB Memory, Intel® Xeon(R) CPU E5-2620 @ 2.00GHz × 4
+- System requirements: Ubuntu 20.04 Desktop, 66GB Memory, Intel® Xeon(R) CPU E5-2620 @ 2.00GHz × 4
 - To run the fuzzers:
 
 ```
@@ -36,5 +36,5 @@
 ### Complete Runs
 
 - Note: 24 core system is required for the complete runs of fuzzers
-- System requirements: Ubuntu 20.04, 66GB Memory, Intel® Xeon(R) CPU E5-2620 @ 2.00GHz × 24
+- System requirements: Ubuntu 20.04 Desktop, 66GB Memory, Intel® Xeon(R) CPU E5-2620 @ 2.00GHz × 24
 - To run the fuzzers, run the above set of commands listed under [Sanity Check](https://github.com/anonymousrdr/topr/tree/main/docs#santity-check)
