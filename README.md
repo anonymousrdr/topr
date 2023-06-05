@@ -3,7 +3,7 @@
 
 ## Artifact Evaluation
 
-- System requirements: Ubuntu 20.04, 66GB Memory, Intel® Xeon(R) CPU E5-2620 @ 2.00GHz × 24
+- System requirements: Ubuntu 20.04 Desktop, 66GB Memory, Intel® Xeon(R) CPU E5-2620 @ 2.00GHz × 24
 - To verify results in the paper, run the commands below
 - NOTE: The segmentation faults and other errors displayed on the terminal during the below runs are NOT errors in the scripts of TOPr framework but are bugs detected by the fuzzers and reported in the paper
 - Estimated time for the below runs to complete is approximately upto 26 days of CPU time
