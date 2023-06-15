@@ -31,6 +31,8 @@ cd scripts/build
 rm aflgo-build.sh && cp $HOME/Desktop/fuzz-prune/aflgo-build.sh .
 ./aflgo-build.sh
 export AFLGO="$HOME/aflgo-top/build/llvm_tools/build-llvm/msan/aflgo"
+pip3 uninstall networkx
+pip3 install networkx==2.8.5
 
 # build passes
 cd $HOME/Desktop/fuzz-prune/btrace
