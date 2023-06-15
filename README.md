@@ -9,6 +9,7 @@
 - Estimated time for the below runs to complete is approximately upto 26 days of CPU time
 
 ```
+    mkdir -p $HOME/Desktop
     cd $HOME/Desktop
     git clone https://github.com/anonymousrdr/topr.git fuzz-prune
     cd fuzz-prune
