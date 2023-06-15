@@ -11,6 +11,13 @@
 - To run the fuzzers:
 
 ```
+sudo su
+echo core >/proc/sys/kernel/core_pattern
+exit
+```
+
+
+```
     cd $HOME/Desktop/fuzz-prune/eval2
     mkdir fuzz-results
     cd fuzz-results
@@ -26,14 +33,6 @@
 ```
 
 - Run the following commands after exiting the container:
-
-
-```
-sudo su
-echo core >/proc/sys/kernel/core_pattern
-exit
-```
-
 
 ```
     cd $HOME/Desktop/fuzz-prune/eval2/fuzz-results
