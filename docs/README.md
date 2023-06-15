@@ -1,5 +1,6 @@
 ## Running Fuzzing Campaigns from scratch
 
+- Note that Docker is only required to run the SieveFuzz fuzzer but not the other 2 fuzzers AFLGo, TOPr.
 - Install docker by following instructions for Ubuntu [here](https://docs.docker.com/engine/install/ubuntu/)
 - After installation, configure Docker to make it run as a non-root user using instructions [here](https://docs.docker.com/engine/install/linux-postinstall/)
 
@@ -25,6 +26,14 @@
 ```
 
 - Run the following commands after exiting the container:
+
+
+```
+sudo su
+echo core >/proc/sys/kernel/core_pattern
+exit
+```
+
 
 ```
     cd $HOME/Desktop/fuzz-prune/eval2/fuzz-results
